@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// To priority queue
 struct ComparePriceGrowing
 {
 	bool operator()(Order* const& order1, Order* const& order2)
@@ -15,6 +16,7 @@ struct ComparePriceGrowing
 	}
 };
 
+// To priority queue
 struct ComparePriceDescending
 {
 	bool operator() (Order* const& order1, Order* const& order2)
