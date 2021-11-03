@@ -2,21 +2,22 @@
 A c++ matching engine for market and limit orders.
 
 ## Features
-* For the implementation of the engine, a FIFO structure was considered, in this way the limit orders are filled according to the order of receipt.
-*For the main operations, there is:
+For the implementation of the engine, a FIFO structure was considered, in this way the limit orders are filled according to the order of receipt.
 
-**Matching: O(1)
+* There are the following complexities for the main operations:
 
-**Insertion: O(log n)
+  * Find the best price for a market order: O(1).
 
-Assume n is the average number of quotes in the orderbook
+  * Insertion: O(log n).
 
-### **Requirements:**
+Assume n is the average number of quotes in the order book.
+
+## **Requirements:**
 * C++20
 * gcc 9.3.0 or newer
 
-### Install
+## Install
 `$ make`
 
-### Install
+## Run
 `$ cd bin/main`
