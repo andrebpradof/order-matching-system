@@ -20,4 +20,9 @@ Assume n is the average number of quotes in the order book.
 `$ make`
 
 ## Run
+
+### To enter orders manually:
 `$ cd bin/main`
+
+### For an automatic random test:
+`$ cd bin/main test`

@@ -1,12 +1,13 @@
 #include <iostream>       
 #include <queue>          
 #include <vector>        
-#include <functional>     
 #include <string>
 #include <sstream>
 #include <iterator>
 #include <cstring>
 #include <cctype>
+#include <cstdlib>
+#include <ctime>
 
 #ifndef COMMON_H
 #define COMMON_H
