@@ -1,6 +1,5 @@
 #include "Orderbook.h"
 
-
 int Orderbook::stopClause(Order* orderInProcess) {
 	if (orderInProcess->getSide() == BUY) {
 		if (orderInProcess->getType() == LIMIT) {
@@ -18,6 +17,7 @@ int Orderbook::stopClause(Order* orderInProcess) {
 			return this->bids.size() > 0;
 		}
 	}
+	return 0;
 }
 
 void Orderbook::processOrder(Order* orderInProcess) {

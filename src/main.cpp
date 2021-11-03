@@ -6,14 +6,15 @@
 #define MAIN_C
 
 vector<string>* splitLine(string commandOrder, vector<string> *words) {
-	char delimiter = ' ';
-	istringstream sstream(commandOrder);
-	string word;
-	while (getline(sstream, word, delimiter)) {
-		word.erase(std::remove_if(word.begin(), word.end(), ispunct), word.end());
-		words->push_back(word);
+	stringstream test(commandOrder);
+	string segment;
+
+	while(std::getline(test, segment, ' '))
+	{
+		words->push_back(segment);
 	}
 	return words;
+
 }
 
 int main(int argc, char** argv) {

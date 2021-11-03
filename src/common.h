@@ -6,6 +6,7 @@
 #include <sstream>
 #include <iterator>
 #include <cstring>
+#include <cctype>
 
 #ifndef COMMON_H
 #define COMMON_H
